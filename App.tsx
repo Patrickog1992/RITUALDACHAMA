@@ -102,7 +102,7 @@ const App: React.FC = () => {
         </div>
       </div>
 
-      <main className="max-w-3xl mx-auto px-6 pt-12 pb-24 space-y-12">
+      <main className="max-w-3xl mx-auto px-6 pt-12 pb-24 space-y-12 text-center">
         
         {/* Banner de Atenção */}
         <div className="bg-red-600 rounded-xl p-4 text-center shadow-lg border-2 border-red-500">
@@ -112,7 +112,7 @@ const App: React.FC = () => {
         </div>
 
         {/* Headline Principal */}
-        <section className="text-center space-y-8">
+        <section className="space-y-8">
           <h1 className="text-3xl md:text-5xl font-extrabold leading-tight uppercase tracking-tighter text-gray-900">
             SUSSURRE O NOME DELE NESTA <span className="fire-gradient-text">CHAMA SAGRADA…</span> E EM ATÉ 5 NOITES ELE VAI FICAR <span className="underline decoration-red-600 decoration-4">TOTALMENTE OBCECADO</span> POR VOCÊ
           </h1>
@@ -131,7 +131,7 @@ const App: React.FC = () => {
         </section>
 
         {/* Blocos Narrativos */}
-        <section className="space-y-6 text-lg md:text-xl leading-relaxed">
+        <section className="space-y-6 text-lg md:text-xl leading-relaxed text-left">
           <p>Eu não imploro para homens.</p>
           <p>Eu não corro atrás deles.</p>
           <p>E com certeza não fico sentada chorando, me perguntando por que ele “precisa de espaço”.</p>
@@ -143,7 +143,7 @@ const App: React.FC = () => {
         </section>
 
         <section className="space-y-10">
-          <div className="bg-gray-50 p-8 md:p-12 rounded-3xl border border-gray-100">
+          <div className="bg-gray-50 p-8 md:p-12 rounded-3xl border border-gray-100 text-left">
             <h2 className="text-3xl font-black mb-6 uppercase">A Última Vez Que Ele Se Afastou…</h2>
             <div className="space-y-4 text-lg">
               <p>Ele achou que podia simplesmente sumir.</p>
@@ -164,7 +164,7 @@ const App: React.FC = () => {
           </div>
         </section>
 
-        <section className="space-y-6 border-l-8 border-red-600 pl-8 py-4">
+        <section className="space-y-6 border-l-8 border-red-600 pl-8 py-4 text-left">
           <div className="space-y-4 text-lg md:text-xl">
             <p><span className="font-black text-red-600 uppercase">Na manhã seguinte?</span> Uma mensagem do nada: “Tive o sonho mais estranho com você. Não consigo parar de pensar em você.”</p>
             <p><span className="font-black text-red-600 uppercase">Na terceira noite?</span> 27 ligações perdidas. Mensagens sem parar: “Me desculpa. Não sei o que está acontecendo comigo. Eu preciso te ver.”</p>
@@ -175,7 +175,7 @@ const App: React.FC = () => {
         </section>
 
         {/* Por Que Isso Funciona */}
-        <section className="space-y-8 bg-black text-white p-10 md:p-16 rounded-[3rem] shadow-fire">
+        <section className="space-y-8 bg-black text-white p-10 md:p-16 rounded-[3rem] shadow-fire text-left">
           <h2 className="text-3xl md:text-4xl font-black uppercase leading-tight">Por Que Isso Funciona (E Por Que Todo o Resto Falha)</h2>
           <div className="space-y-6 text-lg opacity-90">
             <p>A maioria das mulheres faz tudo errado.</p>
@@ -368,7 +368,7 @@ const Testimonial: React.FC<{ name: string; text: string; image: string }> = ({ 
         </div>
       </div>
     </div>
-    <p className="italic text-lg text-gray-800 leading-relaxed font-medium">"{text}"</p>
+    <p className="italic text-lg text-gray-800 leading-relaxed font-medium text-left">"{text}"</p>
     <div className="flex items-center gap-4 pt-4 border-t border-gray-100">
       <img src={image} alt={name} className="w-14 h-14 rounded-full object-cover border-2 border-red-100 shadow-sm" />
       <div className="flex flex-col text-left">
